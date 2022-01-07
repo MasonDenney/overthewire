@@ -241,14 +241,22 @@ gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
 https://overthewire.org/wargames/bandit/bandit22.html
 ```bash
 ssh bandit21@bandit.labs.overthewire.org -p 2220
-
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ```
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
 ## 22
 https://overthewire.org/wargames/bandit/bandit23.html
 ```bash
 ssh bandit22@bandit.labs.overthewire.org -p 2220
-
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
 ## 23
 https://overthewire.org/wargames/bandit/bandit24.html
