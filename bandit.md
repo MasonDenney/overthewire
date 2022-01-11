@@ -403,12 +403,11 @@ cat /etc/bandit_pass/bandit33
 ```
 c9c3199ddf4121b10cf581a98d51caee
 
-
-
 ## 33
 https://overthewire.org/wargames/bandit/bandit34.html
 ```bash
 ssh bandit33@bandit.labs.overthewire.org -p 2220
 cat README.txt
-'''
+```
 NO MORE LEVELS
+
