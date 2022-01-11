@@ -314,6 +314,8 @@ v
 ```
 SSH KEY GIVEN
 
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
 ## 26
 https://overthewire.org/wargames/bandit/bandit27.html
 ```bash
@@ -323,49 +325,83 @@ v
 :e /etc/bandit_pass/bandit26
 ```
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+```
+:set shell=/bin/bash
+:shell
+./bandit27-do cat /etc/bandit_pass/bandit27
+```
+3ba3118a22e93127a4ed485be72ef5ea
 
 ## 27
 https://overthewire.org/wargames/bandit/bandit28.html
 ```bash
 ssh bandit27@bandit.labs.overthewire.org -p 2220
-
+mkdir /tmp/m28
+cd /tmp/m28
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo.git
+cd repo
+cat README
 ```
+0ef186ac70e04ea33b4c1853d2526fa2
 
 ## 28
 https://overthewire.org/wargames/bandit/bandit29.html
 ```bash
 ssh bandit28@bandit.labs.overthewire.org -p 2220
-
+mkdir /tmp/m29
+cd /tmp/m29
+git clone ssh://bandit28-git@localhost/home/bandit28-git/repo
+cd repo
+cat README.md
+git log -p
 ```
+bbc96594b4e001778eee9975372716b2
 
 ## 29
 https://overthewire.org/wargames/bandit/bandit30.html
 ```bash
 ssh bandit29@bandit.labs.overthewire.org -p 2220
-
+mkdir /tmp/m30
+cd /tmp/m30
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+cd repo
+cat README.md
+git log -p
+git branch -a
+git checkout dev
+git log -p
 ```
+5b90576bedb2cc04c86a9e924ce42faf
 
 ## 30
 https://overthewire.org/wargames/bandit/bandit31.html
 ```bash
 ssh bandit30@bandit.labs.overthewire.org -p 2220
-
+git tag
+git show secret
 ```
+47e603bb428404d265f59c42920d81e5
 
 ## 31
 https://overthewire.org/wargames/bandit/bandit32.html
 ```bash
 ssh bandit31@bandit.labs.overthewire.org -p 2220
-
+echo 'May I come in?' > key.txt
+rm .gitignore
+git add -A
+git commit
+git push
 ```
+56a9bf19c63d650ce78e6ec0354ee45e
 
 ## 32
 https://overthewire.org/wargames/bandit/bandit33.html
 ```bash
 ssh bandit32@bandit.labs.overthewire.org -p 2220
-
+$0
+cat /etc/bandit_pass/bandit33
 ```
-
+c9c3199ddf4121b10cf581a98d51caee
 
 
 
@@ -373,5 +409,6 @@ ssh bandit32@bandit.labs.overthewire.org -p 2220
 https://overthewire.org/wargames/bandit/bandit34.html
 ```bash
 ssh bandit33@bandit.labs.overthewire.org -p 2220
-
-```
+cat README.txt
+'''
+NO MORE LEVELS
