@@ -4,10 +4,10 @@
 natas0
 
 ## 0
-<!--The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto -->
+The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto
 
 ## 1
-<!--The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi -->
+The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
 
 ## 2
 http://natas2.natas.labs.overthewire.org/files
